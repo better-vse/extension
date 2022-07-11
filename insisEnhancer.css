@@ -1,0 +1,56 @@
+:root{
+    --vse-blue: #009de0
+}
+
+.success-rate-panel{
+    display: none;
+    height: 106px;
+    width: 600px;
+    padding: 10px;
+    background-color: var(--vse-blue);
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.expand-btn{
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: var(--vse-blue);
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+
+.collapse-btn{
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+    position: fixed;
+    width: 60px;
+    bottom: 46px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+.dropdown-menu ul li {
+    padding-left:0px !important;
+    margin-left: 0px !important;
+    background: none !important;
+    background-position: 0px 0px !important;
+}

@@ -1,0 +1,29 @@
+{
+    "name": "betterVSE",
+    "version": "0.17",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["https://insis.vse.cz/auth/student/registrace.pl*"],
+            "js": ["jQuery.js","popper.js","bootstrap.js","selectpicker.js","hideDoneSubjects.js"],
+            "css": ["bootstrap.css", "selectpicker.css","insisEnhancer.css"],
+            "run_at": "document_end"
+        },
+        {
+            "matches": ["https://insis.vse.cz/*"],
+            "js": ["jQuery.js","popper.js","bootstrap.js","selectpicker.js","insisEnhancer.js"],
+            "css": ["bootstrap.css", "selectpicker.css","insisEnhancer.css"],
+            "run_at": "document_end"
+        },
+        {
+            "matches": ["https://www.vseborec.cz/*"],
+            "js": ["jQuery.js","popper.js","bootstrap.js","selectpicker.js","vseborecEnhancer.js"],
+            "css": ["vseborecEnhancer.css","bootstrap.css", "selectpicker.css"],
+            "run_at": "document_end"
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "VSE enhancer"
+    }
+}
