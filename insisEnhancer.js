@@ -5,6 +5,8 @@ function sleep(ms) {
 function init(){
     const $wrapper = $(`<div id="cp-wrapper" class="closed">
         <div id="cp-closer">-</div>
+        <div id="cp">
+        </div>
     <div>`)
 
     const $opener = $(`<div id="cp-opener">+<div>`)

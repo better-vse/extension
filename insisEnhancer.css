@@ -13,6 +13,8 @@
     text-align: center;
     cursor: pointer;
     color: white;
+    position: fixed;
+    right: 50px;
 }
 
 #cp-opener{
@@ -40,4 +42,10 @@
     bottom: 0;
     right: 50px;
     z-index: var(--main-z);
+}
+
+#cp{
+    width: 100%;
+    height: 100%;
+    float:left;
 }
