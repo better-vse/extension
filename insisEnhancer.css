@@ -3,6 +3,18 @@
     --main-z: 90;
 }
 
+#cp-closer{
+    width: 60px;
+    height: 60px;
+    float:right;
+    background: var(--vse-blue);
+    font-size: 45px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
 #cp-opener{
     width: 60px;
     height: 60px;
@@ -16,7 +28,6 @@
     cursor: pointer;
     color: white;
 }
-
 #cp-wrapper.closed{
     display: none;
 }
