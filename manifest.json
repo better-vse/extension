@@ -5,7 +5,7 @@
     "content_scripts": [
         {
             "matches": ["https://insis.vse.cz/auth/student/registrace.pl*"],
-            "js": ["jQuery.js","popper.js","bootstrap.js","selectpicker.js","hideDoneSubjects.js"],
+            "js": ["jQuery.js","popper.js","bootstrap.js","selectpicker.js"],
             "css": ["bootstrap.css", "selectpicker.css","insisEnhancer.css"],
             "run_at": "document_end"
         },

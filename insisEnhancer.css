@@ -1,56 +1,32 @@
 :root{
-    --vse-blue: #009de0
+    --vse-blue: #009de0;
+    --main-z: 90;
 }
 
-.success-rate-panel{
-    display: none;
-    height: 106px;
-    width: 600px;
-    padding: 10px;
-    background-color: var(--vse-blue);
-    position: fixed;
-    bottom: 0px;
-    right: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.expand-btn{
+#cp-opener{
+    width: 60px;
     height: 60px;
-    width: 60px;
-    padding: 10px;
-    font-size: 30px;
-    font-weight: bolder;
-    background-color: var(--vse-blue);
     position: fixed;
-    bottom: 0px;
-    right: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: var(--vse-blue);
+    bottom: 0;
+    right: 50px;
+    font-size: 45px;
+    line-height: 60px;
+    text-align: center;
     cursor: pointer;
     color: white;
 }
 
-.collapse-btn{
-    padding: 10px;
-    font-size: 30px;
-    font-weight: bolder;
-    position: fixed;
-    width: 60px;
-    bottom: 46px;
-    right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    color: white;
+#cp-wrapper.closed{
+    display: none;
 }
-.dropdown-menu ul li {
-    padding-left:0px !important;
-    margin-left: 0px !important;
-    background: none !important;
-    background-position: 0px 0px !important;
+
+#cp-wrapper{
+    width: 400px;
+    height: 250px;
+    background: var(--vse-blue);
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    z-index: var(--main-z);
 }
